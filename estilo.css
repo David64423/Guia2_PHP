@@ -30,3 +30,11 @@ h1{
     margin: auto;
     
 }
+
+
+#saludoCierre{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    
+}

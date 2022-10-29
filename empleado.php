@@ -1,7 +1,7 @@
 <?php
 session_start();
 require "proteccion.php";
-proteger(1);
+proteger(2);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,17 +13,12 @@ proteger(1);
     <link href=estilo.css rel=stylesheet>
 </head>
 <body>
-<?php
+    <?php
         require "ABM/../usuarioYCierre.php"
     ?>
-    <h1>Pagina de Administrador</h1>
+    <h1>Pagina de Empleado</h1>
     <h4>Bienvenid@ <?php echo $_SESSION['nombre'];?></h4>
-    <div class=admin>
-    <ul>
-        <li>
-            <a href=altas.php><button>Ingresar Productos</button></a>
-        </li>   
-        <li>    
+    <div class=admin>   
             <form>
             <!-- generar la busqueda dependiendo de la opcion ingresada
             por el usuario, puede ser en la misma pag o en otra-->
@@ -32,13 +27,13 @@ proteger(1);
             <input type=radio name=op value="id" required>ID
             <input type=radio name=op value="descripcion" required>Descripcion
       
-            <input type=submit value=Buscar formaction="ABM/buscar.php"
+            <input type=submit value=Buscar formaction="ABM/buscarDelEmpleado.php"
             formmethod="GET">
 
             </form>
          </li>
         <li>
-            <a href=mostrar.php><button>Mostrar Productos</button></a>
+            <a href=mostrarDelEmpleado.php><button>Mostrar Todos Productos</button></a>
         </li>
     </ul>
 </div>

@@ -15,6 +15,14 @@
                         <p>Contraseña:<input type="password" name="password"></p>
                         <input type="submit" value="Iniciar Sesion" formaction="verificacion.php" formmethod="POST">
                     </form>
+                    <?php
+                        if (isset($_GET['noEmail'])){
+                            echo "No existe el correo ".$_GET['noEmail'];
+                        }
+                        if(isset($_GET['badPass'])){
+                            echo "La contraseña no coincide con la del usuario";
+                        }
+                    ?>
             </div>
     </div>
 </body>

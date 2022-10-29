@@ -1,7 +1,7 @@
 <?php
 session_start();
 require "proteccion.php";
-proteger(1);
+proteger(2);
 ?>
 <!DOCTYPE html>
 <html lang="en">

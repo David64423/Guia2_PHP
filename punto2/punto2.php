@@ -1,4 +1,9 @@
 <?php
+session_start();
+require "../proteccion.php";
+proteger(3);
+?>
+<?php
 $fecha = $_GET['fecha'];
 echo $fecha;
 $mes=substr($fecha, 5,2);

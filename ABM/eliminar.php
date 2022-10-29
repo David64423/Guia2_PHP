@@ -1,4 +1,9 @@
 <?php
+session_start();
+require "../proteccion.php";
+proteger(1);
+?>
+<?php
     $id=$_GET['id'];
     require "conexion.php";
     $sql="delete from productos where prod_id=$id";

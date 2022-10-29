@@ -1,3 +1,8 @@
+<?php
+session_start();
+require "proteccion.php";
+proteger(3);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

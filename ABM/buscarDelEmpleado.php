@@ -1,7 +1,5 @@
 <?php
 session_start();
-require "../proteccion.php";
-proteger(1);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,11 +13,19 @@ proteger(1);
 <body>
     
     <?php
-        $id=$_GET['id'];
+        $op=$_GET['op'];
+        $buscado=$_GET['buscado'];
         require "conexion.php";
 
-
-        $sql="select * from productos where prod_id=$id;";
+        if($op=="descripcion"){
+            echo "entro en descripcion";
+            $sql="select * from productos where prod_descripcion='$buscado';";
+        }
+        else if($op=="id"){
+            echo "entro en id";
+            $sql="select * from productos where prod_id=$buscado;";
+            
+        }
         
         $resulset = mysqli_query($conn,$sql);
 
@@ -29,14 +35,9 @@ proteger(1);
             ?>
             <br> <br> <br> <br>
                 <div class="container">
-                    <form>
                     <p>ID:<?php echo $registro['prod_id']?></p>
-                    <p class="inputID">ID:<input type="number" value="<?php echo $registro['prod_id']?>" name="id"></p>
-                    <p>Descripcion:<input name="descripcion" value="<?php echo $registro['prod_descripcion']?>" type="text"></p>
-                    <p>Precio:<input name="precio" value="<?php echo $registro['prod_precio']?>" type="text"></p>
-                    <input type="submit" value="Modificar Los Datos" formaction="confirmacionModificar.php" formmethod="GET">
-                    </form>
-                    
+                    <p>Descripcion:<?php echo $registro['prod_descripcion']?></p>
+                    <p>Precio:<?php echo $registro['prod_precio']?></p>
                 </div>
             <?php
         }

@@ -1,4 +1,10 @@
 <?php
+session_start();
+require "../proteccion.php";
+proteger(1);
+?>
+
+<?php
     $descripcion = $_GET['descripcion'];
     $precio = $_GET['precio'];
 
