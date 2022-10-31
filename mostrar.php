@@ -31,6 +31,8 @@ proteger(1);
             <?php
     }
 ?>
+
+<button><a href="../admin.php">Volver a Inicio</a></button>
     
 </body>
 </html>

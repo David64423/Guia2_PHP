@@ -1,3 +1,8 @@
+<?php
+session_start();
+require "../proteccion.php";
+proteger(3);
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,5 +19,6 @@
         <p>Ingresar Año  <input min=1000  type="number" name="anio" required></p>
         <input type="submit" value="Enviar Datos" formaction="punto3.php" formmethod="GET">
     </form>
+    <button><a href="../profesor.php">Volver a Inicio</a></button>
 </body>
 </html>

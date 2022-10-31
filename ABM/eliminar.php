@@ -15,4 +15,4 @@ proteger(1);
     else{
         echo "<br> <br> <h2> ERROR AL Eliminar EL PRODUCTO </h2>";
     }
-?>
+?> <button><a href="../admin.php">Volver a Inicio</a></button>

@@ -23,6 +23,7 @@ proteger(1);
             <input type=submit value="Ingresar Producto" formaction="ABM/subirProducto.php" formmethod="GET">
         </form>
     </section>  
+    <button><a href="admin.php">Volver a Inicio</a></button>
 </body>
 </html>
 

@@ -47,6 +47,7 @@ session_start();
         }*/
         
     ?>
+    <button><a href="../empleado.php">Volver a Inicio</a></button>
 
 </body>
 </html>

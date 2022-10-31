@@ -16,5 +16,6 @@ proteger(3);
        <p>Introducir una fecha <input type="date" name="fecha"></p> 
        <input type="submit" value="Mandar Fecha" formaction="punto2.php" formmethod="GET">
     </form>
+    <button><a href="../profesor.php">Volver a Inicio</a></button>
 </body>
 </html>

@@ -12,6 +12,11 @@ proteger(3);
     <title>Document</title>
 </head>
 <body>
-    Esta es la página del profesor
+    <h2>Bienvenida profesora</h2>
+    <a href="punto1.php"><button>Ejercicio 1</button></a>
+    <a href="punto2/formulario.php"><button>Ejercicio 2</button></a>
+    <a href="punto3/form_punto3.php"><button>Ejercicio 3</button></a>
+
+    <button><a href="login/loggout.php">Cerrar Sesion</a></button>
 </body>
 </html>

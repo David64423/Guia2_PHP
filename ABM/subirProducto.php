@@ -19,3 +19,5 @@ proteger(1);
         echo "<br> <br> <h2> ERROR AL CARGAR EL PRODUCTO </h2>";
     }
 ?>
+
+<button><a href="../admin.php">Volver a Inicio</a></button>

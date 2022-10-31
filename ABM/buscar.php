@@ -55,5 +55,7 @@ proteger(1);
         
     ?>
 
+<button><a href="../admin.php">Volver a Inicio</a></button>
+
 </body>
 </html>

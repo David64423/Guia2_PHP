@@ -24,4 +24,7 @@ else{
     echo "<br> <br> Ústed introdujo una fecha perteneciente a la estación del primavera";
 } 
 
-?>
+
+
+
+?><button><a href="../profesor.php">Volver a Inicio</a></button>

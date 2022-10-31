@@ -1,4 +1,9 @@
 <?php
+session_start();
+require "../proteccion.php";
+proteger(3);
+?>
+<?php
     $diaIngresado= $_GET['dia'];
     $mesIngresado= $_GET['mes'];
     $anioIngresado= $_GET['anio'];
@@ -40,4 +45,4 @@
         <p>Por favor Ingresar nuevamente una fecha...<a href="form_punto3.html">Volver a la página para ingresar fecha</a></p>  
         <?php
     }
-?>
+?><button><a href="../profesor.php">Volver a Inicio</a></button>
