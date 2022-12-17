@@ -1,0 +1,1 @@
+Este trabajo es un trabajo para mi instituto cuyo enfoque fue prácticar con PHP y la conexion a base de datos para poder hacer un CRUD y un login con minima protección. 
